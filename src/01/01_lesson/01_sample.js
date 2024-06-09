@@ -1,7 +1,21 @@
-// キーボード入力を受け付けて表示するプログラムを作りましょう
+let x = 1
+let y = 2
+let z = x + y
 
-const readlineSync = require('readline-sync');
-// ユーザーの名前を入力する
-let userName = readlineSync.question("あなたの名前を入力してください: ");
-// 挨拶を表示する
-console.log(`こんにちは、${userName}さん！`);
+console.log(z)
+
+let stringX = "1"
+let stringY = "2"
+let stringZ = stringX + stringY
+
+console.log(stringZ)
+
+let isActive = true
+console.log(isActive)
+
+let undefinedVariable
+console.log(undefinedVariable)
+
+let noValue = null
+console.log(noValue)
+

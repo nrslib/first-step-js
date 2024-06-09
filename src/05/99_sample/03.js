@@ -14,3 +14,4 @@ function displayBookDetails(books) {
 
 // 本の詳細を表示する
 displayBookDetails(books);
+

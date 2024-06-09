@@ -1,15 +1,16 @@
+// 名前と年齢を入力するプログラムを作りましょう
+
 const readlineSync = require('readline-sync');
 
-// 合計金額を入力する
-let totalAmountInput = readlineSync.question("合計金額を入力してください: ");
-let totalAmount = Number(totalAmountInput);
+// ユーザーの名前を入力する
+let userName = readlineSync.question("あなたの名前を入力してください: ");
 
-// 参加人数を入力する
-let numberOfPeopleInput = readlineSync.question("参加人数を入力してください: ");
-let numberOfPeople = Number(numberOfPeopleInput);
+// ユーザーの年齢を入力する
+let ageInput = readlineSync.question("あなたの年齢を入力してください: ");
+let age = Number(ageInput);
 
-// 一人あたりの支払い金額を計算する
-let share = totalAmount / numberOfPeople;
+// 来年の年齢を計算する
+let nextYearAge = age + 1;
 
 // 結果を表示する
-console.log(`一人あたりの支払い金額は ${share} 円です。`);
+console.log(`${userName}さん、あなたは来年 ${nextYearAge} 歳になります。`);
