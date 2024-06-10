@@ -6,10 +6,7 @@ function calculateTriangleArea(base, height) {
 }
 
 // 複数の三角形の面積を計算して表示する
-let numberOfTriangles = Number(readlineSync.question("三角形の数を入力してください: "));
-for (let i = 0; i < numberOfTriangles; i++) {
-    let base = Number(readlineSync.question(`三角形${i + 1}の底辺を入力してください: `));
-    let height = Number(readlineSync.question(`三角形${i + 1}の高さを入力してください: `));
-    let area = calculateTriangleArea(base, height);
-    console.log(`三角形${i + 1}の面積は ${area.toFixed(2)} です。`);
-}
+let base = Number(readlineSync.question(`三角形の底辺を入力してください: `));
+let height = Number(readlineSync.question(`三角形の高さを入力してください: `));
+let area = calculateTriangleArea(base, height);
+console.log(`三角形の面積は ${area.toFixed(2)} です。`);

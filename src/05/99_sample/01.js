@@ -1,19 +1,16 @@
-// Studentオブジェクトを作成する
-const students = [
-    { name: "太郎", grade: 80 },
-    { name: "花子", grade: 90 },
-    { name: "次郎", grade: 85 }
+// Bookオブジェクトを作成する
+const books = [
+    { title: "JavaScript入門", author: "山田太郎", price: 2000 },
+    { title: "Node.jsの基礎", author: "田中花子", price: 2500 },
+    { title: "Reactの実践", author: "佐藤次郎", price: 3000 }
 ];
 
-// 平均成績を計算する関数
-function calculateAverage(students) {
-    let totalGrades = 0;
-    for (let student of students) {
-        totalGrades += student.grade;
-    }
-    return totalGrades / students.length;
+// 本の詳細を表示する関数
+function printTitle(book) {
+    console.log(`タイトル: ${book.title}, 著者: ${book.author}, 価格: ${book.price} 円`);
 }
 
-// 平均成績を表示する
-let averageGrade = calculateAverage(students);
-console.log(`平均成績は: ${averageGrade}`);
+for (let i = books.length - 1; i >= 0; i--) {
+    printTitle(books[i]);
+}
+

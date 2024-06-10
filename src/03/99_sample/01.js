@@ -1,14 +1,5 @@
-const readlineSync = require('readline-sync');
-
-// 配列のサイズを入力する
-let size = Number(readlineSync.question("配列のサイズを入力してください: "));
-let numbers = [];
-
-// 配列の要素を入力する
-for (let i = 0; i < size; i++) {
-    let number = Number(readlineSync.question(`配列の要素を入力してください (${i + 1}/${size}): `));
-    numbers.push(number);
-}
+// 固定の配列を使用
+let numbers = [12, 45, 22, 36, 10, 8];
 
 // 配列内の数値の平均を計算する
 let sum = 0;

@@ -1,5 +1,6 @@
-const expenses = [
-    { item: "食費", amount: 5000 },
-    { item: "交通費", amount: 3000 },
-    { item: "娯楽費", amount: 2000 }
+// Studentオブジェクトを作成する
+const students = [
+    { name: "太郎", grade: 80 },
+    { name: "花子", grade: 90 },
+    { name: "次郎", grade: 85 }
 ];

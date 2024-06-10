@@ -1,12 +1,16 @@
 const readlineSync = require('readline-sync');
 
-// 年を入力する
-let yearInput = readlineSync.question("年を入力してください: ");
-let year = Number(yearInput);
+// ユーザーに年齢を入力させる
+let age = readlineSync.question("年齢を入力してください: ");
+age = Number(age, 10);  // 入力された年齢を整数に変換
 
-// うるう年かどうかを判定する
-if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-    console.log(`${year}年はうるう年です。`);
+// ユーザーに身長を入力させる
+let height = readlineSync.question("身長(cm)を入力してください: ");1
+height = Number(height, 10);  // 入力された身長を整数に変換
+
+// 条件をチェックして結果を表示
+if (age >= 12 && height >= 140) {
+    console.log("ジェットコースターに乗れます");
 } else {
-    console.log(`${year}年はうるう年ではありません。`);
+    console.log("ジェットコースターに乗れません");
 }

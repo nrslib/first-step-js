@@ -1,16 +1,17 @@
 const readlineSync = require('readline-sync');
 
-// 項数を入力する
-let terms = Number(readlineSync.question("フィボナッチ数列の項数を入力してください: "));
+// 入力する数値の個数を入力する
+let count = Number(readlineSync.question("入力する数値の個数を入力してください: "));
+let numbers = [];
 
-// フィボナッチ数列を計算して表示する
-let fib = [0, 1];
-
-for (let i = 2; i < terms; i++) {
-    fib[i] = fib[i - 1] + fib[i - 2];
+// 数値を入力する
+for (let i = 0; i < count; i++) {
+    let number = Number(readlineSync.question(`数値を入力してください (${i + 1}/${count}): `));
+    numbers.push(number);
 }
 
-console.log("フィボナッチ数列:");
-for (let i = 0; i < terms; i++) {
-    console.log(fib[i]);
+// 数値を逆順に表示する
+console.log("入力された数値を逆順に表示します:");
+for (let i = numbers.length - 1; i >= 0; i--) {
+    console.log(numbers[i]);
 }

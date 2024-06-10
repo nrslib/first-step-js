@@ -1,5 +1,6 @@
-const books = [
-    { title: "JavaScript入門", author: "山田太郎", price: 2000 },
-    { title: "Node.jsの基礎", author: "田中花子", price: 2500 },
-    { title: "Reactの実践", author: "佐藤次郎", price: 3000 }
+// Expenseオブジェクトを作成する
+const expenses = [
+    { item: "食費", amount: 5000 },
+    { item: "交通費", amount: 3000 },
+    { item: "娯楽費", amount: 2000 }
 ];

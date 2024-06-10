@@ -1,17 +1,20 @@
 const readlineSync = require('readline-sync');
 
-// 入力する数値の個数を入力する
-let count = Number(readlineSync.question("入力する数値の個数を入力してください: "));
-let numbers = [];
+// 範囲の上限を入力する
+let N = Number(readlineSync.question("範囲の上限を入力してください (1以上の整数): "));
 
-// 数値を入力する
-for (let i = 0; i < count; i++) {
-    let number = Number(readlineSync.question(`数値を入力してください (${i + 1}/${count}): `));
-    numbers.push(number);
-}
+console.log(`1から${N}までの素数:`);
 
-// 数値を逆順に表示する
-console.log("入力された数値を逆順に表示します:");
-for (let i = numbers.length - 1; i >= 0; i--) {
-    console.log(numbers[i]);
+for (let i = 2; i <= N; i++) {
+    let isPrime = true;
+
+    for (let j = 2; j < i; j++) {
+        if (i % j === 0) {
+            isPrime = false;
+        }
+    }
+
+    if (isPrime) {
+        console.log(i);
+    }
 }

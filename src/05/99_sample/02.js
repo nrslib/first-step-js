@@ -1,19 +1,19 @@
-// Expenseオブジェクトを作成する
-const expenses = [
-    { item: "食費", amount: 5000 },
-    { item: "交通費", amount: 3000 },
-    { item: "娯楽費", amount: 2000 }
+// Studentオブジェクトを作成する
+const students = [
+    { name: "太郎", grade: 80 },
+    { name: "花子", grade: 90 },
+    { name: "次郎", grade: 85 }
 ];
 
-// 合計金額を計算する関数
-function calculateTotalExpenses(expenses) {
-    let total = 0;
-    for (let expense of expenses) {
-        total += expense.amount;
+// 平均成績を計算する関数
+function calculateAverage(students) {
+    let totalGrades = 0;
+    for (let student of students) {
+        totalGrades += student.grade;
     }
-    return total;
+    return totalGrades / students.length;
 }
 
-// 合計金額を表示する
-let totalExpenses = calculateTotalExpenses(expenses);
-console.log(`合計支出金額は: ${totalExpenses} 円です。`);
+// 平均成績を表示する
+let averageGrade = calculateAverage(students);
+console.log(`平均成績は: ${averageGrade}`);
