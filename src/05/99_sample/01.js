@@ -5,12 +5,8 @@ const books = [
     { title: "Reactの実践", author: "佐藤次郎", price: 3000 }
 ];
 
-// 本の詳細を表示する関数
-function printTitle(book) {
+for (let i = 0; i < books.length; i++) {
+    let book = books[i];
     console.log(`タイトル: ${book.title}, 著者: ${book.author}, 価格: ${book.price} 円`);
-}
-
-for (let i = books.length - 1; i >= 0; i--) {
-    printTitle(books[i]);
 }
 
