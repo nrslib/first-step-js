@@ -1,10 +1,5 @@
-const readlineSync = require('readline-sync');
-
-// 週末かどうかを入力する
-let isWeekend = readlineSync.question("今日は週末ですか？（yes/no）: ").toLowerCase() === 'yes';
-
-// 祝日かどうかを入力する
-let isHoliday = readlineSync.question("今日は祝日ですか？（yes/no）: ").toLowerCase() === 'yes';
+let isWeekend = true
+let isHoliday = true
 
 // 休みかどうかを判定する
 if (isWeekend || isHoliday) {

@@ -1,16 +1,9 @@
-const readlineSync = require('readline-sync');
-
-// 元本を入力する
-let principalInput = readlineSync.question("元本（初期投資額）を入力してください: ");
-let principal = Number(principalInput);
-
-// 利率を入力する
-let rateInput = readlineSync.question("年利率（%）を入力してください: ");
-let rate = Number(rateInput);
-
-// 期間を入力する
-let timeInput = readlineSync.question("投資期間（年）を入力してください: ");
-let time = Number(timeInput);
+// 元本
+let principal = 1000000;
+// 利率（パーセント）
+let rate = 2;
+// 期間（年）
+let time = 35;
 
 // 単利を計算する
 let interest = principal * rate * time / 100;

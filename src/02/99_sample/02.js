@@ -1,9 +1,7 @@
-const readlineSync = require('readline-sync');
-
 // 3つの数値を入力する
-let num1 = Number(readlineSync.question("1つ目の数値を入力してください: "));
-let num2 = Number(readlineSync.question("2つ目の数値を入力してください: "));
-let num3 = Number(readlineSync.question("3つ目の数値を入力してください: "));
+let num1 = 10;
+let num2 = 20;
+let num3 = 50;
 
 // 最大値を判定する
 let max = num1;

@@ -1,9 +1,6 @@
-const readlineSync = require('readline-sync');
-
 let number = 0;
 
-// ユーザーが5を入力するまでループする
+// number が 5 になるまでループする
 while (number !== 5) {
-    number = Number(readlineSync.question("5を入力してください: "));
+    number++;
 }
-console.log("正解です！");

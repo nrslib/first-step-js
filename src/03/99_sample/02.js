@@ -1,7 +1,5 @@
-const readlineSync = require('readline-sync');
-
-// 範囲の上限を入力する
-let N = Number(readlineSync.question("範囲の上限を入力してください (1以上の整数): "));
+// 範囲の上限を入力する（１以上の整数）
+let N = 10
 
 console.log(`1から${N}までの素数:`);
 

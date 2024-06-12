@@ -1,12 +1,8 @@
-const readlineSync = require('readline-sync');
-
 // 月給（基本給）を入力する
-let monthlySalaryInput = readlineSync.question("月給を入力してください: ");
-let monthlySalary = Number(monthlySalaryInput);
+let monthlySalary = 300000;
 
 // ボーナスは何か月分ですか？
-let bonusMonthsInput = readlineSync.question("ボーナスは何か月分ですか？: ");
-let bonusMonths = Number(bonusMonthsInput);
+let bonusMonths = 5.5;
 
 // 年間ボーナスを計算する
 let annualBonus = monthlySalary * bonusMonths;

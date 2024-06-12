@@ -1,8 +1,4 @@
-const readlineSync = require('readline-sync');
-
-// 気温を入力する
-let temperatureInput = readlineSync.question("気温を摂氏で入力してください: ");
-let temperature = Number(temperatureInput);
+let temperature = 20;
 
 // 気温が快適かどうかを判定する
 if (temperature >= 20 && temperature <= 25) {

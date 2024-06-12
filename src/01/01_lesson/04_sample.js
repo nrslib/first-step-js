@@ -1,12 +1,5 @@
-const readlineSync = require('readline-sync');
-
-// 合計金額を入力する
-let totalAmountInput = readlineSync.question("合計金額を入力してください: ");
-let totalAmount = Number(totalAmountInput);
-
-// 参加人数を入力する
-let numberOfPeopleInput = readlineSync.question("参加人数を入力してください: ");
-let numberOfPeople = Number(numberOfPeopleInput);
+let totalAmount = 10000;
+let numberOfPeople = 5;
 
 // 一人あたりの支払い金額を計算する
 let share = totalAmount / numberOfPeople;

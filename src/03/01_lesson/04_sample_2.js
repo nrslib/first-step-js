@@ -1,13 +1,9 @@
-const readlineSync = require('readline-sync');
-
-// 合計する数値の数を入力する
-let count = Number(readlineSync.question("合計する数値の数を入力してください: "));
+let count =10;
 let numbers = [];
 
 // 数値を配列に一時的に格納する
 for (let i = 0; i < count; i++) {
-    let number = Number(readlineSync.question(`数値を入力してください (${i + 1}/${count}): `));
-    numbers.push(number);
+    numbers.push(i);
 }
 
 // 配列内の数値を合計する

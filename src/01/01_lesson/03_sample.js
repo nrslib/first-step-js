@@ -1,13 +1,5 @@
-// 名前と年齢を入力するプログラムを作りましょう
-
-const readlineSync = require('readline-sync');
-
-// ユーザーの名前を入力する
-let userName = readlineSync.question("あなたの名前を入力してください: ");
-
-// ユーザーの年齢を入力する
-let ageInput = readlineSync.question("あなたの年齢を入力してください: ");
-let age = Number(ageInput);
+let userName = "John";
+let age = 20;
 
 // 来年の年齢を計算する
 let nextYearAge = age + 1;

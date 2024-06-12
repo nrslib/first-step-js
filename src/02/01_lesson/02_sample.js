@@ -1,8 +1,4 @@
-const readlineSync = require('readline-sync');
-
-// 点数を入力する
-let scoreInput = readlineSync.question("点数を入力してください: ");
-let score = Number(scoreInput);
+let score = 100;
 
 // 成績の評価
 if (score >= 90) {
